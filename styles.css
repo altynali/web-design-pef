@@ -6,6 +6,11 @@
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 
+  --primary-button-bg: #3498db;
+  --primary-button-hover: #217dbb;
+
+  --primary-button-color: #fff;
+
   --font-size-md: 1rem;
   --font-line-md: 1rem;
 
@@ -42,7 +47,8 @@ figure {
 }
 
 button,
-a {
+a,
+li {
   cursor: pointer;
 }
 
@@ -70,6 +76,38 @@ h3 {
   }
 }
 
+form {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="submit"] {
+  background-color: #0078d4;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
 .root {
   display: flex;
   flex-direction: column;
@@ -88,7 +126,7 @@ figcaption > * {
 }
 
 /* SHARED STYLES */
-.centered_column {
+.centered-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,14 +134,14 @@ figcaption > * {
   text-align: center;
 }
 
-.centered_row {
+.centered-row {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.grey_bar {
+.grey-bar {
   background: var(--secondary-bg-color);
   min-height: 40px;
   display: flex;
@@ -113,12 +151,12 @@ figcaption > * {
 }
 
 @media screen and (min-width: 1200px) {
-  .grey_bar {
+  .grey-bar {
     padding: 30px 20px;
   }
 }
 
-.grid_three_cols {
+.grid-three-cols {
   display: grid;
   grid-template-columns: repeat(var(--column-size-sm), 1fr);
   grid-gap: 10px;
@@ -127,35 +165,39 @@ figcaption > * {
 }
 
 @media screen and (min-width: 900px) {
-  .grid_three_cols {
+  .grid-three-cols {
     grid-template-columns: repeat(var(--column-size-md), 1fr);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .grid_three_cols {
+  .grid-three-cols {
     grid-template-columns: repeat(var(--column-size-lg), 1fr);
   }
 }
 
 .icon {
-  width: 35px;
+  width: 30px;
   height: 30px;
 }
 
-.main_button {
-  background-color: #3498db;
-  color: #fff;
+.main-button {
+  background: var(--primary-button-bg);
+  color: var(--primary-button-color);
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
-.main_button:hover {
-  background-color: #217dbb;
+.main-button:hover {
+  background: var(--primary-button-hover);
+}
+
+.main-button a {
+  color: var(--primary-button-color);
 }
 
 /* SHARED STYLES */
@@ -183,16 +225,16 @@ figcaption > * {
   }
 }
 
-.nav_left {
+.nav-left {
   display: flex;
   justify-content: space-between;
 }
 
-.header_nav_icons {
+.header-nav-icons {
   flex-wrap: wrap;
 }
 
-.header_nav_icons > * {
+.header-nav-icons > * {
   cursor: pointer;
 }
 
@@ -220,14 +262,14 @@ figcaption > * {
   height: 100%;
 }
 
-.card_image {
+.card-image {
   width: 70%;
   height: fit-content;
   object-fit: cover;
 }
 
 @media screen and (min-width: 900px) {
-  .card_image {
+  .card-image {
     width: 400px;
     height: 300px;
   }
@@ -236,7 +278,7 @@ figcaption > * {
 /* MAIN CONTENT STYLES END */
 
 /* FOOTER STYLES */
-.footer_nav {
+.footer-nav {
   flex-wrap: wrap;
 }
 
@@ -252,31 +294,31 @@ figcaption > * {
  =            PRODUCT DETAIL PAGE             =
  =============================================*/
 
-.card_image_product {
+.card-image-product {
   width: 70%;
   height: fit-content;
   object-fit: cover;
 }
 
-.card_product_figure {
+.card-product-figure {
   font-size: 20px;
   height: 100%;
   width: 80%;
 }
 
 @media screen and (min-width: 600px) {
-  .card_image_product {
+  .card-image-product {
     width: 400px;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .card_image_product {
+  .card-image-product {
     width: 500px;
   }
 }
 
-.product_button {
+.product-button {
   margin: 30px 10px;
 }
 
@@ -295,3 +337,16 @@ figcaption > * {
 /*=============================================
  =          SHOPPING CART PAGE END            =
  =============================================*/
+
+.payment-form {
+  padding-top: 40px;
+  width: 80%;
+  text-align: left;
+}
+
+@media screen and (min-width: 900px) {
+  .payment-form {
+    width: 50%;
+  }
+}
+
