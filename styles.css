@@ -143,8 +143,11 @@ figcaption > * {
   text-align: center;
 }
 
-.grey-bar {
+.header-bar {
   background: var(--secondary-bg-color);
+}
+
+.navigation-bar {
   min-height: 40px;
   display: flex;
   justify-content: space-between;
@@ -153,7 +156,7 @@ figcaption > * {
 }
 
 @media screen and (min-width: 1200px) {
-  .grey-bar {
+  .navigation-bar {
     padding: 30px 20px;
   }
 }
@@ -210,6 +213,12 @@ figcaption > * {
   color: var(--primary-button-color);
 }
 
+table {
+  border-collapse: separate;
+  border-spacing: 1em;
+  text-align: left;
+}
+
 /* SHARED STYLES */
 
 /*=============================================
@@ -218,8 +227,17 @@ figcaption > * {
 
 /* HEADER STYLES */
 
+.header-nav {
+  flex-wrap: wrap;
+}
+
 .navigation-links {
   display: none;
+}
+
+.navigation-links a {
+  text-transform: uppercase;
+  color: var(--color);
 }
 
 .burger-menu {
@@ -240,11 +258,38 @@ figcaption > * {
   justify-content: space-between;
 }
 
-.header-nav-icons {
-  flex-wrap: wrap;
+.searching-bar {
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.header-nav-icons > * {
+.searching-inner-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searching-bar-input {
+  width: 200px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .searching-inner-bar {
+    width: 300px;
+  }
+}
+
+.header-nav-right {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-right > * {
   cursor: pointer;
 }
 
@@ -303,6 +348,11 @@ figcaption > * {
 /* MAIN CONTENT STYLES END */
 
 /* FOOTER STYLES */
+
+.footer {
+  background: var(--secondary-bg-color);
+}
+
 .footer-nav {
   flex-wrap: wrap;
 }
@@ -358,6 +408,58 @@ figcaption > * {
 /*=============================================
  =         PRODUCT DETAIL PAGE END            =
  =============================================*/
+.image-insight-p {
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery img {
+  width: 120px;
+  height: 60px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 700px) {
+  .gallery img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+.border {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.comments {
+  margin-top: 30px;
+  padding: 10px;
+  text-align: left;
+}
+
+.comment {
+  width: 80%;
+}
+
+/* @media screen and (min-width: 1000px) {
+  .comment {
+    width: 200px;
+  }
+} */
 
 /*=============================================
  =              SHOPPING CART PAGE            =

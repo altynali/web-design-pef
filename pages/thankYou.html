@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="cz">
-  <!-- TODO: CZ or EN -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,31 +11,48 @@
   <body>
     <div class="root">
       <header>
-        <nav class="grey-bar">
-          <img
-            src="../assets/menu_nav.png"
-            alt="Burger menu icon"
-            class="burger-menu icon"
-          />
-          <div class="navigation-links">
-            <a href="../index.html">Home</a>
-            <!-- <a href="">about</a> -->
+        <nav class="header-bar">
+          <div class="navigation-bar header-nav">
+            <img
+              src="../assets/menu_nav.png"
+              alt="Burger menu icon"
+              class="burger-menu icon"
+            />
+            <div class="navigation-links">
+              <a href="../index.html">Home</a>
+              <span> | </span>
+              <a href="./categories.html">Kategorie</a>
+              <!-- <a href="">about</a> -->
+            </div>
+            <p class="logo">
+              <img src="../assets/logo.png" alt="Logo" class="logo" />
+            </p>
+            <div class="header-nav-right">
+              <!-- TODO: nechat to takhle? -->
+              <a href="./shoppingCart.html">
+                <img
+                  src="../assets/shopping-cart.png"
+                  alt="Shopping cart icon"
+                  class="icon"
+                />
+              </a>
+            </div>
           </div>
-          <p class="logo">
-            <img src="../assets/logo.png" alt="Logo" class="logo" />
-          </p>
-          <div class="header-nav-icons">
-            <img
-              src="../assets/search.png"
-              alt="Search bar icon"
-              class="icon"
-            />
-            <!-- TODO: nechat to takhle? -->
-            <img
-              src="../assets/shopping-cart.png"
-              alt="Shopping cart icon"
-              class="icon"
-            />
+          <div class="searching-bar">
+            <div class="searching-inner-bar">
+              <input
+                type="text"
+                placeholder="Najit product"
+                class="searching-bar-input"
+              />
+              <a href="./searchingResult.html">
+                <img
+                  src="../assets/search.png"
+                  alt="Search bar icon"
+                  class="icon"
+                />
+              </a>
+            </div>
           </div>
         </nav>
       </header>
@@ -49,7 +65,7 @@
       </main>
       <footer class="footer">
         <!-- TODO: nav in footer? -->
-        <nav class="grey-bar footer-nav">
+        <nav class="navigation-bar footer-nav">
           <a href="./shippingAndPickup.html">Možnosti dopravy/vyzvednutí</a>
           <p>© ETE88E Web design - Altynbayeva, Rašek, Jantol</p>
           <div>

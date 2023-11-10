@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="cz">
-  <!-- TODO: aside:mdn categories  +  -->
-  <!-- TODO: PAGE: list of items in cat to diff page + -->
-  <!-- TODO: PAGE: pravidla doprava/platby footer -->
-  <!-- TODO: PAGE: kosik -->
-  <!-- TODO: PAGE: obj proces -->
-  <!-- TODO: PAGE: dekujeme -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,28 +12,46 @@
     <!-- TODO: is root ok? -->
     <div class="root">
       <header>
-        <nav class="grey-bar">
-          <img
-            src="./assets/menu_nav.png"
-            alt="Burger menu icon"
-            class="burger-menu icon"
-          />
-          <div class="navigation-links">
-            <a href="./pages/categories.html">Kategorie</a>
-            <!-- <a href="">about</a> -->
+        <nav class="header-bar">
+          <div class="navigation-bar header-nav">
+            <img
+              src="./assets/menu_nav.png"
+              alt="Burger menu icon"
+              class="burger-menu icon"
+            />
+            <div class="navigation-links">
+              <a href="./pages/categories.html">Kategorie</a>
+              <!-- <a href="">about</a> -->
+            </div>
+            <p class="logo">
+              <img src="./assets/logo.png" alt="Logo" class="logo" />
+            </p>
+            <div class="header-nav-right">
+              <!-- TODO: nechat to takhle? -->
+              <a href="./pages/shoppingCart.html">
+                <img
+                  src="../assets/shopping-cart.png"
+                  alt="Shopping cart icon"
+                  class="icon"
+                />
+              </a>
+            </div>
           </div>
-          <p class="logo">
-            <img src="./assets/logo.png" alt="Logo" class="logo" />
-          </p>
-          <div class="header-nav-icons">
-            <img src="./assets/search.png" alt="Search bar icon" class="icon" />
-            <a href="./pages/shoppingCart.html">
-              <img
-                src="./assets/shopping-cart.png"
-                alt="Shopping cart icon"
-                class="icon"
+          <div class="searching-bar">
+            <div class="searching-inner-bar">
+              <input
+                type="text"
+                placeholder="Najit product"
+                class="searching-bar-input"
               />
-            </a>
+              <a href="./searchingResult.html">
+                <img
+                  src="../assets/search.png"
+                  alt="Search bar icon"
+                  class="icon"
+                />
+              </a>
+            </div>
           </div>
         </nav>
       </header>
@@ -225,25 +237,30 @@
       <aside class="centered-column aside">
         <h3>!!! SPUŠTĚN OBŘÍ BLACK FRIDAY !!!</h3>
         <p>
-             Připravte se na herní bouři plnou slev! 
-              Letos přinášíme největší Black Friday slevy, které vám rozšíří hranice zábavy za neuvěřitelné ceny! 🎲
-              Proč nakupovat právě teď:
-              <div>
-              Slevy na všechny hry: Od klasik až po nejnovější hity. 🎁
-              <br>
-              Doprava zdarma: Při nákupu dvou a více her. 🚚 
-              <br>
-              Pro každého: Hry pro všechny věkové kategorie i nadšence 👨‍👩‍👧‍👦
-              <br>
-              <br>
-              Pozor, nabídka platí pouze do půlnoci Black Friday! 🕛
-            </div>
+          Připravte se na herní bouři plnou slev! Letos přinášíme největší Black
+          Friday slevy, které vám rozšíří hranice zábavy za neuvěřitelné ceny!
+          🎲 Proč nakupovat právě teď:
         </p>
+
+        <div>
+          Slevy na všechny hry: Od klasik až po nejnovější hity. 🎁
+          <br />
+          Doprava zdarma: Při nákupu dvou a více her. 🚚
+          <br />
+          Pro každého: Hry pro všechny věkové kategorie i nadšence 👨‍👩‍👧‍👦
+          <br />
+          <br />
+          Pozor, nabídka platí pouze do půlnoci Black Friday! 🕛
+        </div>
         <ul>
           <li>
-            <a href="https://tn.nova.cz/zpravodajstvi/clanek/449234-vyhnete-se-podvodum-na-black-friday-coi-varuje-pred-vychytralymi-obchodniky" target="-blank">Black Friday Nabídky !!!</a>
+            <a
+              href="https://tn.nova.cz/zpravodajstvi/clanek/449234-vyhnete-se-podvodum-na-black-friday-coi-varuje-pred-vychytralymi-obchodniky"
+              target="-blank"
+              >Black Friday Nabídky !!!</a
+            >
           </li>
-           <!--
+          <!--
           <li>
             <a href="https://www.google.com/" target="-blank">Hra 2</a>
           </li>
@@ -255,7 +272,7 @@
       </aside>
       <footer class="footer">
         <!-- TODO: nav in footer? -->
-        <nav class="grey-bar footer-nav">
+        <nav class="navigation-bar footer-nav">
           <a href="./pages/shippingAndPickup.html"
             >Možnosti dopravy/vyzvednutí</a
           >
