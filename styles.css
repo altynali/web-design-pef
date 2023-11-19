@@ -1,7 +1,14 @@
 :root {
-  --color: #333;
+  --dark-font-color: #333333;
+  --light-font-color: #ffffff;
+  --grey-font-color: #cccccc;
+
   --primary-bg-color: #f0ecec;
   --secondary-bg-color: #e1c055;
+  --welcome-text-bg-color: #ffffff;
+  --submit-bg-color: #0078d4;
+  --submit-bg-color-hover: #0056b3;
+
   --bg-item: #fdfdfd;
   --font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -10,7 +17,7 @@
   --primary-button-bg: #3498db;
   --primary-button-hover: #217dbb;
 
-  --primary-button-color: #fff;
+  --primary-button-color: #ffffff;
 
   --font-size-md: 1rem;
   --font-line-md: 1.5rem;
@@ -25,13 +32,6 @@
   --column-size-sm: 1;
   --column-size-md: 2;
   --column-size-lg: 3;
-
-  /* 
-  breakpoint-sm: 600px;
-  breakpoint-md: 900px;
-  breakpoint-lg: 1200px;
-  breakpoint-xl: 1536px; 
-  */
 }
 
 /* reset */
@@ -55,7 +55,7 @@ li {
 
 body {
   background: var(--primary-bg-color);
-  color: var(--color);
+  color: var(--dark-font-color);
   font: var(--font-md);
 }
 
@@ -89,15 +89,15 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--grey-font-color);
   border-radius: 5px;
   font-size: 16px;
-  color: #333;
+  color: var(--dark-font-color);
 }
 
 input[type="submit"] {
-  background-color: #0078d4;
-  color: #fff;
+  background-color: var(--submit-bg-color);
+  color: var(--light-font-color);
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -106,7 +106,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: var(--submit-bg-color-hover);
 }
 
 .root {
@@ -124,7 +124,7 @@ figure {
 
 figcaption > * {
   margin: 10px;
-  color: var(--color);
+  color: var(--dark-font-color);
 }
 
 /* SHARED STYLES */
@@ -256,7 +256,7 @@ table {
 
 .navigation-link {
   text-transform: uppercase;
-  color: var(--color);
+  color: var(--dark-font-color);
   border: 1px solid var(--primary-button-bg);
   border-radius: 5px;
   padding: 5px;
@@ -267,7 +267,7 @@ table {
 
 .navigation-link:hover {
   background: var(--primary-button-hover);
-  color: #ffffff;
+  color: var(--primary-button-color);
 }
 
 .burger-menu {
@@ -337,7 +337,7 @@ table {
 }
 
 .welcome-text {
-  background-color: #ffffff;
+  background-color: var(--welcome-text-bg-color);
   padding: 3%;
 }
 
@@ -360,7 +360,7 @@ table {
   height: 100%;
   border-style: solid;
   border-width: 1px;
-  border-color: #333;
+  border-color: var(--dark-font-color);
   box-sizing: border-box;
 }
 
@@ -396,7 +396,7 @@ table {
 .aside {
   padding: 5%;
   margin: 5%;
-  border: 1px solid #ccc;
+  border: 1px solid var(--grey-font-color);
   border-radius: 5px;
   background: var(--secondary-bg-color);
 }
