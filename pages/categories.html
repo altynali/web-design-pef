@@ -19,15 +19,12 @@
               class="burger-menu icon"
             />
             <div class="navigation-links">
-              <a href="../index.html">Home</a>
-              <!-- <a href="">about</a> -->
+              <a href="../index.html" class="navigation-link">Domov</a>
             </div>
-            <!-- TODO: spatne -->
-            <p class="logo">
+            <div class="logo">
               <img src="../assets/logo.png" alt="Logo" class="logo" />
-            </p>
+            </div>
             <div class="header-nav-right">
-              <!-- TODO: nechat to takhle? -->
               <a href="./shoppingCart.html">
                 <img
                   src="../assets/shopping-cart.png"
@@ -44,7 +41,7 @@
                 placeholder="Najit product"
                 class="searching-bar-input"
               />
-              <a href="./searchingResult.html">
+              <a href="./product.html">
                 <img
                   src="../assets/search.png"
                   alt="Search bar icon"
@@ -57,40 +54,19 @@
       </header>
       <main class="content">
         <article>
-          <header class="centered-column">
-            <h1>Vybrat kategorii:</h1>
-            <ul>
-              <!-- TODO: jestli delat z kazdeho link -->
-              <li>Rodinné hry</li>
-                <p>Vítáme Vás v naší kategorii "Rodinné Hry", kde se setkávají všechny možné generace a vytvářejí společné chvíle plné radosti a soutěžení! 
-                  Naše nabídka her je určena nejen pro rodiny, ale pro všechny, kdo hledají způsob, jak spojit blízké a strávit spolu nezapomenutelné chvíle.
-                  Pro ty, kdo si chtějí užít kvalitní čas spolu, naše rodinné hry nabízejí zábavu a interakci pro všechny věkové skupiny. 
-                  Jsou ideální pro večery s přáteli, neformální setkání s rodinou nebo dokonce pro týmovou výzvu na firemním večírku.
-                  Vyberte si z naší pestré nabídky her a hry mohou začít!!
-                </p>
-              <li>Strategické hry</li>
-                <p>Vítáme Vás do světa "Strategických her" kde strategie a taktika nejsou jen slova, ale klíčové elementy každé hry. 
-                  V naší kategorii "Strategické Hry" přinášíme nekonečné možnosti pro všechny, kteří hledají výzvy, plánování a intelektuální dobrodružství.
-                  Zapomeňte na jednoduchá pravidla. Naše strategické hry jsou o rozhodnutích, která ovlivňují Vaši cestu k vítězství. 
-                  Od bojových taktik až po ekonomické strategie - vyberte si hru, která vás vyzve a rozšíří vaše hranice myšlení.
-                  Vaše strategické dobrodružství začíná právě tady!
-                </p>
-
-              <li>Párty hry</li>
-                <p>Vítejte v naší kategorii "Párty Hry", kde je každá hra zárukou večera plného smíchu a radosti! 
-                  Párty hry jsou možností jak rozproudit večer, nastartovat Vaši soutěživost a kreativitu. 
-                  Jsou ideální pro večery plné veselí, oslav narozenin, firemní akce nebo prostě kdykoliv, kdy chcete trochu rozhýbat atmosféru.
-                  Takže zavolejte přátele, roztáhněte ubrus na stůl a připravte se na párty, která se bude pamatovat! Vaše párty dobrodružství začíná právě tady!
-                </p>
-            </ul>
+          <header>
+            <h1>Vyber kategorii</h1>
           </header>
 
-          <!-- Products -->
-
           <section class="section">
-            <h2>Produkty z těchto kategorií</h2>
-            <!-- TODO: section or div -->
-            <section class="grid-three-cols">
+            <div class="section-header-category">
+              <h2>Rodinné hry</h2>
+              <button class="main-button">
+                <a href="./category.html"> zobrazit vice </a>
+              </button>
+            </div>
+
+            <div class="grid-three-cols">
               <a href="../pages/product.html" class="card centered-column">
                 <figure>
                   <img
@@ -100,6 +76,62 @@
                   />
                   <figcaption>
                     <p>Rodinné hry</p>
+                    <h3>Rodinná pouta</h3>
+                    <p>499 Kč</p>
+                    <p>Skladem</p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="../pages/product.html" class="card centered-column">
+                <figure>
+                  <img
+                    class="card-image"
+                    src="https://picsum.photos/seed/picsum/1000/1000"
+                    alt="Board game image board game"
+                  />
+                  <figcaption>
+                    <p>Rodinné hry</p>
+                    <h3>Království intrik</h3>
+                    <p>749 Kč</p>
+                    <p>Skladem</p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="../pages/product.html" class="card centered-column">
+                <figure>
+                  <img
+                    class="card-image"
+                    src="https://picsum.photos/seed/picsum/1000/1000"
+                    alt="Board game image board game"
+                  />
+                  <figcaption>
+                    <p>Rodinné hry</p>
+                    <h3>Kdo dopije vyhraje</h3>
+                    <p>299 Kč</p>
+                    <p>Skladem</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </section>
+          <section class="section">
+            <div class="section-header-category">
+              <h2>Strategické hry</h2>
+              <button class="main-button">
+                <a href="./category.html"> zobrazit vice </a>
+              </button>
+            </div>
+
+            <div class="grid-three-cols">
+              <a href="../pages/product.html" class="card centered-column">
+                <figure>
+                  <img
+                    class="card-image"
+                    src="https://picsum.photos/seed/picsum/1000/1000"
+                    alt="Board game image board game"
+                  />
+                  <figcaption>
+                    <p>Strategické hry</p>
                     <h3>Rodinná pouta</h3>
                     <p>499 Kč</p>
                     <p>Skladem</p>
@@ -129,6 +161,61 @@
                     alt="Board game image board game"
                   />
                   <figcaption>
+                    <p>Strategické hry</p>
+                    <h3>Kdo dopije vyhraje</h3>
+                    <p>299 Kč</p>
+                    <p>Skladem</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </section>
+          <section class="section">
+            <div class="section-header-category">
+              <h2>Párty hry</h2>
+              <button class="main-button">
+                <a href="./category.html"> zobrazit vice </a>
+              </button>
+            </div>
+            <div class="grid-three-cols">
+              <a href="../pages/product.html" class="card centered-column">
+                <figure>
+                  <img
+                    class="card-image"
+                    src="https://picsum.photos/seed/picsum/1000/1000"
+                    alt="Board game image board game"
+                  />
+                  <figcaption>
+                    <p>Párty hry</p>
+                    <h3>Rodinná pouta</h3>
+                    <p>499 Kč</p>
+                    <p>Skladem</p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="../pages/product.html" class="card centered-column">
+                <figure>
+                  <img
+                    class="card-image"
+                    src="https://picsum.photos/seed/picsum/1000/1000"
+                    alt="Board game image board game"
+                  />
+                  <figcaption>
+                    <p>Párty hry</p>
+                    <h3>Království intrik</h3>
+                    <p>749 Kč</p>
+                    <p>Skladem</p>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="../pages/product.html" class="card centered-column">
+                <figure>
+                  <img
+                    class="card-image"
+                    src="https://picsum.photos/seed/picsum/1000/1000"
+                    alt="Board game image board game"
+                  />
+                  <figcaption>
                     <p>Párty hry</p>
                     <h3>Kdo dopije vyhraje</h3>
                     <p>299 Kč</p>
@@ -136,12 +223,11 @@
                   </figcaption>
                 </figure>
               </a>
-            </section>
+            </div>
           </section>
         </article>
       </main>
       <footer class="footer">
-        <!-- TODO: nav in footer? -->
         <nav class="navigation-bar footer-nav">
           <a href="./shippingAndPickup.html">Možnosti dopravy/vyzvednutí</a>
           <p>© ETE88E Web design - Altynbayeva, Rašek, Jantol</p>
