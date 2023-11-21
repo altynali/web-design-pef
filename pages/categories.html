@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +11,8 @@
   <body>
     <div class="root">
       <header>
-        <nav class="header-bar">
-          <div class="navigation-bar header-nav">
+        <nav class="header-navigation-bar" aria-label="Main Navigation">
+          <div class="footer-navigation-bar header-nav">
             <img
               src="../assets/menu_nav.png"
               alt="Burger menu icon"
@@ -61,8 +61,11 @@
           <section class="section">
             <div class="section-header-category">
               <h2>Rodinné hry</h2>
-              <button class="main-button">
-                <a href="./category.html"> zobrazit vice </a>
+              <button
+                class="main-button"
+                onclick="window.location.href='./category.html'"
+              >
+                Zobrazit více
               </button>
             </div>
 
@@ -117,8 +120,11 @@
           <section class="section">
             <div class="section-header-category">
               <h2>Strategické hry</h2>
-              <button class="main-button">
-                <a href="./category.html"> zobrazit vice </a>
+              <button
+                class="main-button"
+                onclick="window.location.href='./category.html'"
+              >
+                Zobrazit více
               </button>
             </div>
 
@@ -173,8 +179,11 @@
           <section class="section">
             <div class="section-header-category">
               <h2>Párty hry</h2>
-              <button class="main-button">
-                <a href="./category.html"> zobrazit vice </a>
+              <button
+                class="main-button"
+                onclick="window.location.href='./category.html'"
+              >
+                Zobrazit více
               </button>
             </div>
             <div class="grid-three-cols">
@@ -228,7 +237,7 @@
         </article>
       </main>
       <footer class="footer">
-        <nav class="navigation-bar footer-nav">
+        <nav class="footer-navigation-bar" aria-label="Footer Navigation">
           <a href="./shippingAndPickup.html">Možnosti dopravy/vyzvednutí</a>
           <p>© ETE88E Web design - Altynbayeva, Rašek, Jantol</p>
           <div>

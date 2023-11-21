@@ -14,8 +14,8 @@
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 
-  --primary-button-bg: #3498db;
-  --primary-button-hover: #217dbb;
+  --primary-button-bg: #1e3faa;
+  --primary-button-hover: #1e3faa;
 
   --primary-button-color: #ffffff;
 
@@ -143,20 +143,25 @@ figcaption > * {
   text-align: center;
 }
 
-.header-bar {
+.header-navigation-bar {
   background: var(--secondary-bg-color);
 }
 
-.navigation-bar {
+.footer-navigation-bar {
   min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-navigation-bar > * {
+  margin: 5px;
 }
 
 @media screen and (min-width: 1200px) {
-  .navigation-bar {
+  .footer-navigation-bar {
     padding: 30px 20px;
   }
 }
@@ -329,6 +334,13 @@ table {
   height: 45px;
 }
 
+@media screen and (min-width: 500px) {
+  .logo {
+    width: 250px;
+    height: 75px;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .logo {
     width: 510px;
@@ -385,14 +397,6 @@ table {
   background: var(--secondary-bg-color);
 }
 
-.footer-nav {
-  flex-wrap: wrap;
-}
-
-.footer-nav > * {
-  margin: 5px;
-}
-
 .aside {
   padding: 5%;
   margin: 5%;
@@ -434,7 +438,7 @@ table {
 }
 
 .in-stock {
-  color: rgba(78, 179, 0, 0.847);
+  color: rgb(47, 105, 3);
 }
 
 /*=============================================

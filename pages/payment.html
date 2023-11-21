@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +11,8 @@
   <body>
     <div class="root">
       <header>
-        <nav class="header-bar">
-          <div class="navigation-bar header-nav">
+        <nav class="header-navigation-bar" aria-label="Main Navigation">
+          <div class="footer-navigation-bar header-nav">
             <img
               src="../assets/menu_nav.png"
               alt="Burger menu icon"
@@ -87,15 +87,18 @@
                 />
               </form>
 
-              <button class="main-button product-button">
-                <a href="./thankYou.html">Dokončit objednávku</a>
+              <button
+                class="main-button product-button"
+                onclick="window.location.href='./thankYou.html'"
+              >
+                Dokončit objednávku
               </button>
             </section>
           </section>
         </article>
       </main>
       <footer class="footer">
-        <nav class="navigation-bar footer-nav">
+        <nav class="footer-navigation-bar" aria-label="Footer Navigation">
           <a href="./shippingAndPickup.html">Možnosti dopravy/vyzvednutí</a>
           <p>© ETE88E Web design - Altynbayeva, Rašek, Jantol</p>
           <div>
