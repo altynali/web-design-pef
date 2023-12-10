@@ -204,6 +204,11 @@ figcaption > * {
   }
 }
 
+.star-icon {
+  width: 20px;
+  height: 20px;
+}
+
 .icon {
   width: 20px;
   height: 20px;
@@ -227,7 +232,7 @@ figcaption > * {
   border: none;
   border-radius: 5px;
   padding: 10px;
-  font-size: 16px;
+  /* font-size: 16px; */
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
@@ -494,12 +499,6 @@ table {
 .comment {
   width: 80%;
 }
-
-/* @media screen and (min-width: 1000px) {
-  .comment {
-    width: 200px;
-  }
-} */
 
 /*=============================================
  =              SHOPPING CART PAGE            =
