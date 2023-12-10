@@ -1,7 +1,9 @@
 :root {
   --dark-font-color: #333333;
+  --dark-font-color-hover: #161515;
   --light-font-color: #ffffff;
   --grey-font-color: #cccccc;
+  --in-stock-font-color: #2f6903;
 
   --primary-bg-color: #f0ecec;
   --secondary-bg-color: #e1c055;
@@ -447,7 +449,7 @@ table {
 }
 
 .in-stock {
-  color: rgb(47, 105, 3);
+  color: var(--in-stock-font-color);
 }
 
 /*=============================================
@@ -506,6 +508,14 @@ table {
 
 .button {
   margin: 30px 10px;
+}
+
+.shopping-cart-link {
+  color: var(--dark-font-color);
+}
+
+.shopping-cart-link:hover {
+  color: var(--dark-font-color-hover);
 }
 
 /*=============================================
