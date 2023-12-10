@@ -2,14 +2,18 @@
   "tabWidth": 2,
   "useTabs": false,
   "semi": false,
-  "singleQuote": true,
   "htmlWhitespaceSensitivity": "ignore",
-  "parser": "html",
   "overrides": [
     {
       "files": "*.html",
       "options": {
         "parser": "html"
+      }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "parser": "css"
       }
     }
   ]
