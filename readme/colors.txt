@@ -1,4 +1,0 @@
-Navy Blue Text on Light Gray Background:
-
-Text Color: #1A237E (navy blue)
-Background Color: #F5F5F5 (light gray)
